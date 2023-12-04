@@ -5,22 +5,12 @@ import { auth } from "./routes/auth.js";
 import { users } from "./routes/users.js";
 import { posts } from "./routes/posts.js";
 import cookieParser from "cookie-parser";
-import path from 'path';
-
-import cors from 'cors';
 
 //Middleware 
 app.use(Express.json());
 app.use(cookieParser());
 
 app.use(Express.static('public'));
-
-const corsOptions = {
-    origin : 'localhost', 
-    credentials : true
-}
-
-app.use(cors(corsOptions));
 
 //Routes
 app.use('/api/auth', auth);
