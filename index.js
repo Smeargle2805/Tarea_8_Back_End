@@ -27,11 +27,6 @@ app.use('/api/auth', auth);
 app.use('/api/users', users);
 app.use('/api/posts', posts);
 
-app.get('/*', (req, res) => {
-    res.sendFile(path.join( 'public', 'index.html'));
-  });
-
-
 app.listen(4000, ()=>{
 
     console.log("Servidor en puerto 4000");
