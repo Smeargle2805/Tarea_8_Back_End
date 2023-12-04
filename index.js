@@ -12,6 +12,11 @@ app.use(cookieParser());
 
 app.use(Express.static('public'));
 
+const corsOptions = {
+    origin : 'localhost', 
+    credentials : true
+}
+
 //Routes
 app.use('/api/auth', auth);
 app.use('/api/users', users);

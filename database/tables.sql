@@ -1,4 +1,4 @@
--- Active: 1700436861294@@dpg-cld8o1vgsrdc73fjbe4g-a.oregon-postgres.render.com@5432@babd28
+-- Active: 1699316839154@@127.0.0.1@5432@redsocial
 create table tbl_role
 (
     id SERIAL PRIMARY key,
