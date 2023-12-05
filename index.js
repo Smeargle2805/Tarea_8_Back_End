@@ -28,6 +28,6 @@ app.use('/api/posts', posts);
 
 app.listen(3000, ()=>{
 
-    console.log("Servidor en puerto 2000");
+    console.log("Servidor en puerto 3000");
 
 })
