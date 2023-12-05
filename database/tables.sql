@@ -39,7 +39,7 @@ values
 select * from tbl_users
 where user_name = 'smeargle28' and pass = 'Arroz19$' and is_active = true;
 
-select id, description , user_name ,  encode(img, 'base64') img_base64 from tbl_post
+select id, description , user_name from tbl_post
 order by create_date desc;
 
 SELECT * FROM tbl_users;
@@ -48,7 +48,6 @@ create table tbl_post
 (   
     id SERIAL PRIMARY key,
     description varchar(200),
-    img bytea,
     create_date TIMESTAMP default current_timestamp,
     user_name varchar(30) REFERENCES tbl_users (user_name) 
 );

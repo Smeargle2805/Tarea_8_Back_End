@@ -15,9 +15,15 @@ app.use(cookieParser());
 app.use(Express.static('public'));
 
 const corsOptions = {
-    origin : 'http://localhost:3000', 
-    credentials : true
-}
+    origin: [
+        'http://localhost:5173',
+        'http://localhost:5173/',
+        // Agrega otras rutas según sea necesario
+    ],
+    credentials: true,
+    methods: ['GET', 'PUT', 'POST', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+};
 
 app.use(cors(corsOptions));
 
