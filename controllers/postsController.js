@@ -23,7 +23,7 @@ const createPosts = async (req, res)=>{
 const getPost = async (req, res) =>{
 
 
-    const sql = ` select id, description , user_name from tbl_post
+    const sql = ` select id, description , create_date, user_name from tbl_post
     order by create_date desc `;
 
     const result = await db.query(sql);

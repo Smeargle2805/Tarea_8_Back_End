@@ -39,7 +39,7 @@ values
 select * from tbl_users
 where user_name = 'smeargle28' and pass = 'Arroz19$' and is_active = true;
 
-select id, description , user_name from tbl_post
+select id, description , create_date, user_name from tbl_post
 order by create_date desc;
 
 SELECT * FROM tbl_users;
